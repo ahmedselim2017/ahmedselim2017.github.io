@@ -18,20 +18,6 @@
   </url>
   
   <url>
-    <loc>/tr/tags/castorsctf20/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/castorsctf20/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tr"
-                href="/tr/tags/castorsctf20/"
-                />
-  </url>
-  
-  <url>
     <loc>/tr/writups/castors/</loc>
     <xhtml:link
                 rel="alternate"
@@ -46,10 +32,6 @@
   </url>
   
   <url>
-    <loc>/tr/yazilar/0x101_dalmatians/</loc>
-  </url>
-  
-  <url>
     <loc>/tr/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -60,20 +42,6 @@
                 rel="alternate"
                 hreflang="tr"
                 href="/tr/categories/"
-                />
-  </url>
-  
-  <url>
-    <loc>/tr/tags/crypto/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/crypto/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tr"
-                href="/tr/tags/crypto/"
                 />
   </url>
   
@@ -92,20 +60,6 @@
   </url>
   
   <url>
-    <loc>/tr/tags/writeup/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/writeup/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tr"
-                href="/tr/tags/writeup/"
-                />
-  </url>
-  
-  <url>
     <loc>/tr/writups/</loc>
     <xhtml:link
                 rel="alternate"
@@ -117,10 +71,6 @@
                 hreflang="tr"
                 href="/tr/writups/"
                 />
-  </url>
-  
-  <url>
-    <loc>/tr/yazilar/</loc>
   </url>
   
 </urlset>

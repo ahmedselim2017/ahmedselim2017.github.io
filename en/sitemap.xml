@@ -31,16 +31,6 @@
   
   <url>
     <loc>/tags/castorsctf20/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="tr"
-                href="/tr/tags/castorsctf20/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/castorsctf20/"
-                />
   </url>
   
   <url>
@@ -185,16 +175,6 @@
   
   <url>
     <loc>/tags/crypto/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="tr"
-                href="/tr/tags/crypto/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/crypto/"
-                />
   </url>
   
   <url>
@@ -233,16 +213,6 @@
   
   <url>
     <loc>/tags/writeup/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="tr"
-                href="/tr/tags/writeup/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/writeup/"
-                />
   </url>
   
   <url>
