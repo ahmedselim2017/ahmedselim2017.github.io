@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
   
-    <title>Leftovers :: Blog</title>
+    <title>castorsCTF20 - Leftovers :: Blog — Where&#39;s the truth in the written word if no one reads it?</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="description" content="We can decode the packages using this code The packages are USB packages. So maybe it is a keyboard? We can find decoding information indside HID Usage Tables. So let&amp;rsquo;s decode it using python.
-from scapy.all import * newmap = { 0: &amp;#34;&amp;#34;, 2: &amp;#34;PostFail&amp;#34;, 4: &amp;#34;a&amp;#34;, 5: &amp;#34;b&amp;#34;, 6: &amp;#34;c&amp;#34;, 7: &amp;#34;d&amp;#34;, 8: &amp;#34;e&amp;#34;, 9: &amp;#34;f&amp;#34;, 10: &amp;#34;g&amp;#34;, 11: &amp;#34;h&amp;#34;, 12: &amp;#34;i&amp;#34;, 13: &amp;#34;j&amp;#34;, 14: &amp;#34;k&amp;#34;, 15: &amp;#34;l&amp;#34;, 16: &amp;#34;m&amp;#34;, 17: &amp;#34;n&amp;#34;, 18: &amp;#34;o&amp;#34;, 19: &amp;#34;p&amp;#34;, 20: &amp;#34;q&amp;#34;, 21: &amp;#34;r&amp;#34;, 22: &amp;#34;s&amp;#34;, 23: &amp;#34;t&amp;#34;, 24: &amp;#34;u&amp;#34;, 25: &amp;#34;v&amp;#34;, 26: &amp;#34;w&amp;#34;, 27: &amp;#34;x&amp;#34;, 28: &amp;#34;y&amp;#34;, 29: &amp;#34;z&amp;#34;, 30: &amp;#34;1&amp;#34;, 31: &amp;#34;2&amp;#34;, 32: &amp;#34;3&amp;#34;, 33: &amp;#34;4&amp;#34;, 34: &amp;#34;5&amp;#34;, 35: &amp;#34;6&amp;#34;, 36: &amp;#34;7&amp;#34;, 37: &amp;#34;8&amp;#34;, 38: &amp;#34;9&amp;#34;, 39: &amp;#34;0&amp;#34;, 40: &amp;#34;Enter&amp;#34;, 41: &amp;#34;esc&amp;#34;, 42: &amp;#34;del&amp;#34;, 43: &amp;#34;tab&amp;#34;, 44: &amp;#34; &amp;#34;, 45: &amp;#34;-&amp;#34;, 47: &amp;#34;{&amp;#34;, 48: &amp;#34;}&amp;#34;, 56: &amp;#34;/&amp;#34;, 57: &amp;#34;CapsLock&amp;#34;, 79: &amp;#34;RightArrow&amp;#34;, 80: &amp;#34;LetfArrow&amp;#34; } packets = rdpcap(&amp;#39;." />
+<meta name="description" content="" />
 <meta name="keywords" content="blog" />
 <meta name="robots" content="noodp" />
 <link rel="canonical" href="/writups/castorsctf20/leftovers/" />
@@ -17,7 +16,7 @@ from scapy.all import * newmap = { 0: &amp;#34;&amp;#34;, 2: &amp;#34;PostFail&a
 
 <link rel="stylesheet" href="/assets/style.css">
 
-  <link rel="stylesheet" href="/assets/green.css">
+  <link rel="stylesheet" href="/assets/blue.css">
 
 
 
@@ -26,7 +25,7 @@ from scapy.all import * newmap = { 0: &amp;#34;&amp;#34;, 2: &amp;#34;PostFail&a
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
 
-  <link rel="shortcut icon" href="/img/favicon/green.png">
+  <link rel="shortcut icon" href="/img/favicon/blue.png">
 
 
 
@@ -39,14 +38,13 @@ from scapy.all import * newmap = { 0: &amp;#34;&amp;#34;, 2: &amp;#34;PostFail&a
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Leftovers :: Blog">
-<meta property="og:description" content="We can decode the packages using this code The packages are USB packages. So maybe it is a keyboard? We can find decoding information indside HID Usage Tables. So let&amp;rsquo;s decode it using python.
-from scapy.all import * newmap = { 0: &amp;#34;&amp;#34;, 2: &amp;#34;PostFail&amp;#34;, 4: &amp;#34;a&amp;#34;, 5: &amp;#34;b&amp;#34;, 6: &amp;#34;c&amp;#34;, 7: &amp;#34;d&amp;#34;, 8: &amp;#34;e&amp;#34;, 9: &amp;#34;f&amp;#34;, 10: &amp;#34;g&amp;#34;, 11: &amp;#34;h&amp;#34;, 12: &amp;#34;i&amp;#34;, 13: &amp;#34;j&amp;#34;, 14: &amp;#34;k&amp;#34;, 15: &amp;#34;l&amp;#34;, 16: &amp;#34;m&amp;#34;, 17: &amp;#34;n&amp;#34;, 18: &amp;#34;o&amp;#34;, 19: &amp;#34;p&amp;#34;, 20: &amp;#34;q&amp;#34;, 21: &amp;#34;r&amp;#34;, 22: &amp;#34;s&amp;#34;, 23: &amp;#34;t&amp;#34;, 24: &amp;#34;u&amp;#34;, 25: &amp;#34;v&amp;#34;, 26: &amp;#34;w&amp;#34;, 27: &amp;#34;x&amp;#34;, 28: &amp;#34;y&amp;#34;, 29: &amp;#34;z&amp;#34;, 30: &amp;#34;1&amp;#34;, 31: &amp;#34;2&amp;#34;, 32: &amp;#34;3&amp;#34;, 33: &amp;#34;4&amp;#34;, 34: &amp;#34;5&amp;#34;, 35: &amp;#34;6&amp;#34;, 36: &amp;#34;7&amp;#34;, 37: &amp;#34;8&amp;#34;, 38: &amp;#34;9&amp;#34;, 39: &amp;#34;0&amp;#34;, 40: &amp;#34;Enter&amp;#34;, 41: &amp;#34;esc&amp;#34;, 42: &amp;#34;del&amp;#34;, 43: &amp;#34;tab&amp;#34;, 44: &amp;#34; &amp;#34;, 45: &amp;#34;-&amp;#34;, 47: &amp;#34;{&amp;#34;, 48: &amp;#34;}&amp;#34;, 56: &amp;#34;/&amp;#34;, 57: &amp;#34;CapsLock&amp;#34;, 79: &amp;#34;RightArrow&amp;#34;, 80: &amp;#34;LetfArrow&amp;#34; } packets = rdpcap(&amp;#39;." />
+<meta property="og:title" content="castorsCTF20 - Leftovers :: Blog">
+<meta property="og:description" content="" />
 <meta property="og:url" content="/writups/castorsctf20/leftovers/" />
-<meta property="og:site_name" content="Leftovers" />
+<meta property="og:site_name" content="castorsCTF20 - Leftovers" />
 
   
-    <meta property="og:image" content="/img/favicon/green.png">
+    <meta property="og:image" content="/img/favicon/blue.png">
   
 
 <meta property="og:image:width" content="2048">
@@ -75,7 +73,7 @@ from scapy.all import * newmap = { 0: &amp;#34;&amp;#34;, 2: &amp;#34;PostFail&a
     <div class="header__logo">
       <a href="/">
   <div class="logo">
-    Ahmed Selim Üzüm
+    Tozkoparan (Ahmed Selim Üzüm)
   </div>
 </a>
 
@@ -148,7 +146,7 @@ from scapy.all import * newmap = { 0: &amp;#34;&amp;#34;, 2: &amp;#34;PostFail&a
     
 <div class="post">
   <h1 class="post-title">
-    <a href="/writups/castorsctf20/leftovers/">Leftovers</a></h1>
+    <a href="/writups/castorsctf20/leftovers/">castorsCTF20 - Leftovers</a></h1>
   <div class="post-meta">
     
     
@@ -246,7 +244,6 @@ packets <span style="color:#f92672">=</span> rdpcap(<span style="color:#e6db74">
 </code></pre></div><pre><code>cwhat dooyoo  thhnng yyuu will ffnnn herr/ thhss/ csstossCapsLockctfCapsLock{1stiswhatyoowant}
 </code></pre><p>And we get something like a flag. So let&rsquo;s clean and find the real flag!</p>
 <p><strong>Flag:</strong> <code>castorsCTF{1stiswhatyoowant}</code></p>
-
       </div></div>
 
   
@@ -259,16 +256,16 @@ packets <span style="color:#f92672">=</span> rdpcap(<span style="color:#e6db74">
     <div class="pagination__buttons">
         
         <span class="button previous">
-            <a href="/writups/castorsctf20/glitchity_glitch/">
+            <a href="/writups/castorsctf20/jigglypuffs_song/">
                 <span class="button__icon">←</span>
-                <span class="button__text">Glitchity Glitch</span>
+                <span class="button__text">castorsCTF20 - Jigglypuff&#39;s Song</span>
             </a>
         </span>
         
         
         <span class="button next">
-            <a href="/writups/castorsctf20/manipulation/">
-                <span class="button__text">Manipulation</span>
+            <a href="/writups/castorsctf20/magic_school_bus/">
+                <span class="button__text">castorsCTF20 - Magic School Bus</span>
                 <span class="button__icon">→</span>
             </a>
         </span>

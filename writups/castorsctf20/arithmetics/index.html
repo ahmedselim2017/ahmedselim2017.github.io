@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
   
-    <title>Arithmetics :: Blog</title>
+    <title>castorsCTF20 - Arithmetics :: Blog — Where&#39;s the truth in the written word if no one reads it?</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="description" content="When we connect to the server, we can see we have to answer a lot of questions. So that let&amp;rsquo;s write a script!
-from pwn import * conn = remote(&amp;#34;chals20.cybercastors.com&amp;#34;,14429) conn.recvuntil(&amp;#34;&amp;lt;&amp;#34;) conn.recvuntil(&amp;#34;\n&amp;#34;) conn.send(&amp;#34;\n&amp;#34;) sayilar = {&amp;#34;one&amp;#34;:1, &amp;#34;two&amp;#34;:2, &amp;#34;three&amp;#34;:3, &amp;#34;four&amp;#34;:4, &amp;#34;five&amp;#34;:5, &amp;#34;six&amp;#34;:6, &amp;#34;seven&amp;#34;:7, &amp;#34;eight&amp;#34;:8, &amp;#34;nine&amp;#34;:9, &amp;#34;zero&amp;#34;:0} while True: try: soru = conn.recvline() print(soru) soru = str(soru).split(&amp;#34; &amp;#34;) try: sayi1 = int(soru[2]) except: sayi1 = sayilar[soru[2]] try: sayi2 = int(soru[4]) except: sayi2 = sayilar[soru[4]] if soru[3] == &amp;#39;&#43;&amp;#39; or soru[3] == &amp;#34;plus&amp;#34;: islem = &amp;#34;&#43;&amp;#34; sonuc = sayi1 &#43; sayi2 elif soru[3] == &amp;#39;-&amp;#39; or soru[3] == &amp;#34;minus&amp;#34;: islem = &amp;#34;-&amp;#34; sonuc = sayi1 - sayi2 elif soru[3] == &amp;#39;*&amp;#39; or soru[3] == &amp;#34;multiplied-by&amp;#34;: islem = &amp;#34;*&amp;#34; sonuc = sayi1 * sayi2 elif soru[3] == &amp;#39;//&amp;#39; or soru[3] == &amp;#34;divided-by&amp;#34;: islem = &amp;#34;/&amp;#34; sonuc = sayi1 // sayi2 conn." />
+<meta name="description" content="" />
 <meta name="keywords" content="blog" />
 <meta name="robots" content="noodp" />
 <link rel="canonical" href="/writups/castorsctf20/arithmetics/" />
@@ -17,7 +16,7 @@ from pwn import * conn = remote(&amp;#34;chals20.cybercastors.com&amp;#34;,14429
 
 <link rel="stylesheet" href="/assets/style.css">
 
-  <link rel="stylesheet" href="/assets/green.css">
+  <link rel="stylesheet" href="/assets/blue.css">
 
 
 
@@ -26,7 +25,7 @@ from pwn import * conn = remote(&amp;#34;chals20.cybercastors.com&amp;#34;,14429
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
 
-  <link rel="shortcut icon" href="/img/favicon/green.png">
+  <link rel="shortcut icon" href="/img/favicon/blue.png">
 
 
 
@@ -39,14 +38,13 @@ from pwn import * conn = remote(&amp;#34;chals20.cybercastors.com&amp;#34;,14429
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Arithmetics :: Blog">
-<meta property="og:description" content="When we connect to the server, we can see we have to answer a lot of questions. So that let&amp;rsquo;s write a script!
-from pwn import * conn = remote(&amp;#34;chals20.cybercastors.com&amp;#34;,14429) conn.recvuntil(&amp;#34;&amp;lt;&amp;#34;) conn.recvuntil(&amp;#34;\n&amp;#34;) conn.send(&amp;#34;\n&amp;#34;) sayilar = {&amp;#34;one&amp;#34;:1, &amp;#34;two&amp;#34;:2, &amp;#34;three&amp;#34;:3, &amp;#34;four&amp;#34;:4, &amp;#34;five&amp;#34;:5, &amp;#34;six&amp;#34;:6, &amp;#34;seven&amp;#34;:7, &amp;#34;eight&amp;#34;:8, &amp;#34;nine&amp;#34;:9, &amp;#34;zero&amp;#34;:0} while True: try: soru = conn.recvline() print(soru) soru = str(soru).split(&amp;#34; &amp;#34;) try: sayi1 = int(soru[2]) except: sayi1 = sayilar[soru[2]] try: sayi2 = int(soru[4]) except: sayi2 = sayilar[soru[4]] if soru[3] == &amp;#39;&#43;&amp;#39; or soru[3] == &amp;#34;plus&amp;#34;: islem = &amp;#34;&#43;&amp;#34; sonuc = sayi1 &#43; sayi2 elif soru[3] == &amp;#39;-&amp;#39; or soru[3] == &amp;#34;minus&amp;#34;: islem = &amp;#34;-&amp;#34; sonuc = sayi1 - sayi2 elif soru[3] == &amp;#39;*&amp;#39; or soru[3] == &amp;#34;multiplied-by&amp;#34;: islem = &amp;#34;*&amp;#34; sonuc = sayi1 * sayi2 elif soru[3] == &amp;#39;//&amp;#39; or soru[3] == &amp;#34;divided-by&amp;#34;: islem = &amp;#34;/&amp;#34; sonuc = sayi1 // sayi2 conn." />
+<meta property="og:title" content="castorsCTF20 - Arithmetics :: Blog">
+<meta property="og:description" content="" />
 <meta property="og:url" content="/writups/castorsctf20/arithmetics/" />
-<meta property="og:site_name" content="Arithmetics" />
+<meta property="og:site_name" content="castorsCTF20 - Arithmetics" />
 
   
-    <meta property="og:image" content="/img/favicon/green.png">
+    <meta property="og:image" content="/img/favicon/blue.png">
   
 
 <meta property="og:image:width" content="2048">
@@ -75,7 +73,7 @@ from pwn import * conn = remote(&amp;#34;chals20.cybercastors.com&amp;#34;,14429
     <div class="header__logo">
       <a href="/">
   <div class="logo">
-    Ahmed Selim Üzüm
+    Tozkoparan (Ahmed Selim Üzüm)
   </div>
 </a>
 
@@ -148,7 +146,7 @@ from pwn import * conn = remote(&amp;#34;chals20.cybercastors.com&amp;#34;,14429
     
 <div class="post">
   <h1 class="post-title">
-    <a href="/writups/castorsctf20/arithmetics/">Arithmetics</a></h1>
+    <a href="/writups/castorsctf20/arithmetics/">castorsCTF20 - Arithmetics</a></h1>
   <div class="post-meta">
     
     
@@ -175,7 +173,8 @@ from pwn import * conn = remote(&amp;#34;chals20.cybercastors.com&amp;#34;,14429
   
 
   <div class="post-content"><div>
-        <p>When we connect to the server, we can see we have to answer a lot of questions.
+        <!-- raw HTML omitted -->
+<p>When we connect to the server, we can see we have to answer a lot of questions.
 So that let&rsquo;s write a script!</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
 
@@ -229,7 +228,6 @@ sayilar <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;o
         data <span style="color:#f92672">=</span> conn<span style="color:#f92672">.</span>recv(<span style="color:#ae81ff">1024</span>)
         <span style="color:#66d9ef">print</span>(data)
 </code></pre></div><p><strong>Flag:</strong> <code>castorsCTF(n00b_pyth0n_4r17hm3t1c5}</code></p>
-
       </div></div>
 
   
@@ -242,16 +240,16 @@ sayilar <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;o
     <div class="pagination__buttons">
         
         <span class="button previous">
-            <a href="/writups/castorsctf20/abcbof/">
+            <a href="/writups/castorsctf20/amazon/">
                 <span class="button__icon">←</span>
-                <span class="button__text">abcbof</span>
+                <span class="button__text">castorsCTF20 - Amazon</span>
             </a>
         </span>
         
         
         <span class="button next">
             <a href="/writups/castorsctf20/babybof1/">
-                <span class="button__text">babybof1</span>
+                <span class="button__text">castorsCTF20 - babybof1</span>
                 <span class="button__icon">→</span>
             </a>
         </span>

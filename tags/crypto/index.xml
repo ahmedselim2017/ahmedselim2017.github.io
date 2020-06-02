@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>crypto on Blog</title>
+    <link>/tags/crypto/</link>
+    <description>Recent content in crypto on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Ahmed Selim Üzüm</copyright>
+    
+	<atom:link href="/tags/crypto/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>castorsCTF20 - Amazon</title>
+      <link>/writups/castorsctf20/amazon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/writups/castorsctf20/amazon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>castorsCTF20 - Goose Chase</title>
+      <link>/writups/castorsctf20/0x101_dalmatians/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/writups/castorsctf20/0x101_dalmatians/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>castorsCTF20 - Goose Chase</title>
+      <link>/writups/castorsctf20/goose_chase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/writups/castorsctf20/goose_chase/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>castorsCTF20 - Jigglypuff&#39;s Song</title>
+      <link>/writups/castorsctf20/jigglypuffs_song/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/writups/castorsctf20/jigglypuffs_song/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>castorsCTF20 - Magic School Bus</title>
+      <link>/writups/castorsctf20/magic_school_bus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/writups/castorsctf20/magic_school_bus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>castorsCTF20 - One Tricky Pony</title>
+      <link>/writups/castorsctf20/one_trick_pony/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/writups/castorsctf20/one_trick_pony/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>castorsCTF20 - Two Paths</title>
+      <link>/writups/castorsctf20/two_paths/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/writups/castorsctf20/two_paths/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>castorsCTF20 - Warmup</title>
+      <link>/writups/castorsctf20/warmup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/writups/castorsctf20/warmup/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

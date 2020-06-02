@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  
+    <title>castorsCTF20 - Goose Chase :: Blok</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/tr/yazilar/0x101_dalmatians/" />
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/blue.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/img/favicon/blue.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  <meta name="twitter:site" content="" />
+
+<meta name="twitter:creator" content="Zeyd" />
+
+
+<meta property="og:locale" content="tr" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="castorsCTF20 - Goose Chase :: Blok">
+<meta property="og:description" content="" />
+<meta property="og:url" content="/tr/yazilar/0x101_dalmatians/" />
+<meta property="og:site_name" content="castorsCTF20 - Goose Chase" />
+
+  
+    <meta property="og:image" content="/img/favicon/blue.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="https://github.com/ahmedselim2017">Github</a></li>
+        
+      
+        
+          <li><a href="/writups">CTF Writup&#39;ları</a></li>
+        
+      
+      
+        <ul class="menu__sub-inner">
+          <li class="menu__sub-inner-more-trigger">Daha fazla ▾</li>
+
+          <ul class="menu__sub-inner-more hidden">
+            
+              
+                <li><a href="/yazilar">Yazılar</a></li>
+              
+            
+          </ul>
+        </ul>
+      
+    
+
+    
+    <div class="spacer"></div>
+    <ul class="language-selector">
+      <ul class="language-selector-current">
+          <li>Türkçe ▾</li>
+      </ul>
+      <ul class="language-selector__more hidden">
+        
+        <li><a href="/">English</a></li>
+        
+        <li><a href="/tr/">Türkçe</a></li>
+        
+      </ul>
+    </ul>
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="https://github.com/ahmedselim2017">Github</a></li>
+      
+    
+      
+        <li><a href="/writups">CTF Writup&#39;ları</a></li>
+      
+    
+      
+        <li><a href="/yazilar">Yazılar</a></li>
+      
+    
+    
+    <hr />
+        
+          <li>
+            <a href="/">English</a>
+          </li>
+        
+          <li>
+            <a href="/tr/">Türkçe</a>
+          </li>
+        
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/tr/yazilar/0x101_dalmatians/">castorsCTF20 - Goose Chase</a></h1>
+  <div class="post-meta">
+    
+    
+    <span class="post-author">::
+      Zeyd
+    </span>
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tr/tags/writeup/">writeup</a>&nbsp;
+    
+    #<a href="/tr/tags/crypto/">crypto</a>&nbsp;
+    
+    #<a href="/tr/tags/castorsctf20/">castorsCTF20</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <p>Challange says it response to Amazon so it should be again about prime series.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">primes <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;2&#34;</span>,<span style="color:#e6db74">&#34;3&#34;</span>,<span style="color:#e6db74">&#34;5&#34;</span>,<span style="color:#e6db74">&#34;7&#34;</span>,<span style="color:#e6db74">&#34;11&#34;</span>,<span style="color:#e6db74">&#34;13&#34;</span>,<span style="color:#e6db74">&#34;17&#34;</span>,<span style="color:#e6db74">&#34;19&#34;</span>,<span style="color:#e6db74">&#34;23&#34;</span>,<span style="color:#e6db74">&#34;29&#34;</span>,<span style="color:#e6db74">&#34;31&#34;</span>,<span style="color:#e6db74">&#34;37&#34;</span>,<span style="color:#e6db74">&#34;41&#34;</span>,<span style="color:#e6db74">&#34;43&#34;</span>,<span style="color:#e6db74">&#34;47&#34;</span>,<span style="color:#e6db74">&#34;53&#34;</span>,<span style="color:#e6db74">&#34;59&#34;</span>,<span style="color:#e6db74">&#34;61&#34;</span>,<span style="color:#e6db74">&#34;67&#34;</span>,<span style="color:#e6db74">&#34;71&#34;</span>,<span style="color:#e6db74">&#34;73&#34;</span>,<span style="color:#e6db74">&#34;79&#34;</span>,<span style="color:#e6db74">&#34;83&#34;</span>,<span style="color:#e6db74">&#34;89&#34;</span>,<span style="color:#e6db74">&#34;97&#34;</span>,<span style="color:#e6db74">&#34;101&#34;</span>,<span style="color:#e6db74">&#34;103&#34;</span>,<span style="color:#e6db74">&#34;107&#34;</span>,<span style="color:#e6db74">&#34;109&#34;</span>,<span style="color:#e6db74">&#34;113&#34;</span>,<span style="color:#e6db74">&#34;127&#34;</span>,<span style="color:#e6db74">&#34;131&#34;</span>,<span style="color:#e6db74">&#34;137&#34;</span>,<span style="color:#e6db74">&#34;139&#34;</span>,<span style="color:#e6db74">&#34;149&#34;</span>,<span style="color:#e6db74">&#34;151&#34;</span>,<span style="color:#e6db74">&#34;157&#34;</span>,<span style="color:#e6db74">&#34;163&#34;</span>,<span style="color:#e6db74">&#34;167&#34;</span>,<span style="color:#e6db74">&#34;173&#34;</span>,<span style="color:#e6db74">&#34;179&#34;</span>,<span style="color:#e6db74">&#34;181&#34;</span>,<span style="color:#e6db74">&#34;191&#34;</span>,<span style="color:#e6db74">&#34;193&#34;</span>,<span style="color:#e6db74">&#34;197&#34;</span>,<span style="color:#e6db74">&#34;199&#34;</span>,<span style="color:#e6db74">&#34;211&#34;</span>,<span style="color:#e6db74">&#34;223&#34;</span>,<span style="color:#e6db74">&#34;227&#34;</span>,<span style="color:#e6db74">&#34;229&#34;</span>,<span style="color:#e6db74">&#34;233&#34;</span>,<span style="color:#e6db74">&#34;239&#34;</span>,<span style="color:#e6db74">&#34;241&#34;</span>,<span style="color:#e6db74">&#34;251&#34;</span>,<span style="color:#e6db74">&#34;257&#34;</span>]
+
+all_ct <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;198 34 61 41 193 197 156 245 133 231 215 14 70 230 33 231 221 141 219 67 160 52 119 4 127 50 19 140 201 1 101 120 95 192 20 142 51 191 188 2 33 121 225 93 211 70 224 202 238 114 194 38 56&#34;</span><span style="color:#f92672">.</span>split()
+
+alphabet <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;}&#34;</span>,<span style="color:#e6db74">&#34;{&#34;</span>,<span style="color:#e6db74">&#34;c&#34;</span>,<span style="color:#e6db74">&#34;w&#34;</span>,<span style="color:#e6db74">&#34;e&#34;</span>,<span style="color:#e6db74">&#34;r&#34;</span>,<span style="color:#e6db74">&#34;t&#34;</span>,<span style="color:#e6db74">&#34;y&#34;</span>,<span style="color:#e6db74">&#34;u&#34;</span>,<span style="color:#e6db74">&#34;ı&#34;</span>,<span style="color:#e6db74">&#34;o&#34;</span>,<span style="color:#e6db74">&#34;p&#34;</span>,<span style="color:#e6db74">&#34;a&#34;</span>,<span style="color:#e6db74">&#34;s&#34;</span>,<span style="color:#e6db74">&#34;d&#34;</span>,<span style="color:#e6db74">&#34;f&#34;</span>,<span style="color:#e6db74">&#34;g&#34;</span>,<span style="color:#e6db74">&#34;h&#34;</span>,<span style="color:#e6db74">&#34;j&#34;</span>,<span style="color:#e6db74">&#34;k&#34;</span>,<span style="color:#e6db74">&#34;l&#34;</span>,<span style="color:#e6db74">&#34;i&#34;</span>,<span style="color:#e6db74">&#34;z&#34;</span>,<span style="color:#e6db74">&#34;x&#34;</span>,<span style="color:#e6db74">&#34;q&#34;</span>,<span style="color:#e6db74">&#34;v&#34;</span>,<span style="color:#e6db74">&#34;b&#34;</span>,<span style="color:#e6db74">&#34;n&#34;</span>,<span style="color:#e6db74">&#34;m&#34;</span>,<span style="color:#e6db74">&#34;Q&#34;</span>,<span style="color:#e6db74">&#34;W&#34;</span>,<span style="color:#e6db74">&#34;E&#34;</span>,<span style="color:#e6db74">&#34;R&#34;</span>,<span style="color:#e6db74">&#34;T&#34;</span>,<span style="color:#e6db74">&#34;Y&#34;</span>,<span style="color:#e6db74">&#34;U&#34;</span>,<span style="color:#e6db74">&#34;I&#34;</span>,<span style="color:#e6db74">&#34;O&#34;</span>,<span style="color:#e6db74">&#34;P&#34;</span>,<span style="color:#e6db74">&#34;A&#34;</span>,<span style="color:#e6db74">&#34;S&#34;</span>,<span style="color:#e6db74">&#34;D&#34;</span>,<span style="color:#e6db74">&#34;F&#34;</span>,<span style="color:#e6db74">&#34;G&#34;</span>,<span style="color:#e6db74">&#34;H&#34;</span>,<span style="color:#e6db74">&#34;J&#34;</span>,<span style="color:#e6db74">&#34;K&#34;</span>,<span style="color:#e6db74">&#34;L&#34;</span>,<span style="color:#e6db74">&#34;Z&#34;</span>,<span style="color:#e6db74">&#34;X&#34;</span>,<span style="color:#e6db74">&#34;C&#34;</span>,<span style="color:#e6db74">&#34;V&#34;</span>,<span style="color:#e6db74">&#34;B&#34;</span>,<span style="color:#e6db74">&#34;N&#34;</span>,<span style="color:#e6db74">&#34;M&#34;</span>,<span style="color:#e6db74">&#34;_&#34;</span>,<span style="color:#e6db74">&#34;1&#34;</span>,<span style="color:#e6db74">&#34;2&#34;</span>,<span style="color:#e6db74">&#34;3&#34;</span>,<span style="color:#e6db74">&#34;4&#34;</span>,<span style="color:#e6db74">&#34;5&#34;</span>,<span style="color:#e6db74">&#34;6&#34;</span>,<span style="color:#e6db74">&#34;7&#34;</span>,<span style="color:#e6db74">&#34;8&#34;</span>,<span style="color:#e6db74">&#34;9&#34;</span>,<span style="color:#e6db74">&#34;0&#34;</span>]
+
+prime <span style="color:#f92672">=</span> primes[<span style="color:#ae81ff">0</span>]
+mod <span style="color:#f92672">=</span> <span style="color:#ae81ff">0x101</span>
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">bf</span>():
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">53</span>):
+            ct <span style="color:#f92672">=</span> all_ct[i]
+            <span style="color:#66d9ef">for</span> b <span style="color:#f92672">in</span> primes:
+                <span style="color:#66d9ef">for</span> u <span style="color:#f92672">in</span> alphabet:
+                    <span style="color:#66d9ef">if</span> ord(u) <span style="color:#f92672">*</span> int(b) <span style="color:#f92672">%</span> mod <span style="color:#f92672">==</span> int(ct):
+                        <span style="color:#66d9ef">if</span> primes<span style="color:#f92672">.</span>index(b) <span style="color:#f92672">==</span> i:
+                            <span style="color:#66d9ef">print</span>(u, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>)
+
+bf()
+</code></pre></div><p><strong>Flag:</strong> <code>castorsCTF{1f_y0u_g07_th1s_w1th0u7_4ny_h1n7s_r3sp3c7}</code></p>
+      </div></div>
+
+  
+  
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

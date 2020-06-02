@@ -2,13 +2,11 @@
 <html lang="en">
 <head>
   
-    <title>Car Lottery :: Blog</title>
+    <title>castorsCTF20 - Car Lottery :: Blog — Where&#39;s the truth in the written word if no one reads it?</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="description" content="First, with changing our client cookie to 3123248 we can access winner page. Then we can see site is using id param for getting car types. And if we use a invalid car type and then send a invalid ID we get an SQL error!
-With that we can dump data (and crack) from SQL database using this command:
-sqlmap -u &amp;#34;http://web1.cybercastors.com:14435/search?id=&amp;#34; --method=POST --cookie=&amp;#34;client=3123248&amp;#34; --dump And we got some creds! For using them we can find the /dealer dir using gobuster." />
+<meta name="description" content="" />
 <meta name="keywords" content="blog" />
 <meta name="robots" content="noodp" />
 <link rel="canonical" href="/writups/castorsctf20/car_lottery/" />
@@ -18,7 +16,7 @@ sqlmap -u &amp;#34;http://web1.cybercastors.com:14435/search?id=&amp;#34; --meth
 
 <link rel="stylesheet" href="/assets/style.css">
 
-  <link rel="stylesheet" href="/assets/green.css">
+  <link rel="stylesheet" href="/assets/blue.css">
 
 
 
@@ -27,7 +25,7 @@ sqlmap -u &amp;#34;http://web1.cybercastors.com:14435/search?id=&amp;#34; --meth
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
 
-  <link rel="shortcut icon" href="/img/favicon/green.png">
+  <link rel="shortcut icon" href="/img/favicon/blue.png">
 
 
 
@@ -40,15 +38,13 @@ sqlmap -u &amp;#34;http://web1.cybercastors.com:14435/search?id=&amp;#34; --meth
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Car Lottery :: Blog">
-<meta property="og:description" content="First, with changing our client cookie to 3123248 we can access winner page. Then we can see site is using id param for getting car types. And if we use a invalid car type and then send a invalid ID we get an SQL error!
-With that we can dump data (and crack) from SQL database using this command:
-sqlmap -u &amp;#34;http://web1.cybercastors.com:14435/search?id=&amp;#34; --method=POST --cookie=&amp;#34;client=3123248&amp;#34; --dump And we got some creds! For using them we can find the /dealer dir using gobuster." />
+<meta property="og:title" content="castorsCTF20 - Car Lottery :: Blog">
+<meta property="og:description" content="" />
 <meta property="og:url" content="/writups/castorsctf20/car_lottery/" />
-<meta property="og:site_name" content="Car Lottery" />
+<meta property="og:site_name" content="castorsCTF20 - Car Lottery" />
 
   
-    <meta property="og:image" content="/img/favicon/green.png">
+    <meta property="og:image" content="/img/favicon/blue.png">
   
 
 <meta property="og:image:width" content="2048">
@@ -77,7 +73,7 @@ sqlmap -u &amp;#34;http://web1.cybercastors.com:14435/search?id=&amp;#34; --meth
     <div class="header__logo">
       <a href="/">
   <div class="logo">
-    Ahmed Selim Üzüm
+    Tozkoparan (Ahmed Selim Üzüm)
   </div>
 </a>
 
@@ -150,7 +146,7 @@ sqlmap -u &amp;#34;http://web1.cybercastors.com:14435/search?id=&amp;#34; --meth
     
 <div class="post">
   <h1 class="post-title">
-    <a href="/writups/castorsctf20/car_lottery/">Car Lottery</a></h1>
+    <a href="/writups/castorsctf20/car_lottery/">castorsCTF20 - Car Lottery</a></h1>
   <div class="post-meta">
     
     
@@ -185,7 +181,6 @@ a invalid car type and then send a invalid ID we get an SQL error!</p>
 </code></pre></div><p>And we got some creds! For using them we can find the <code>/dealer</code> dir using <code>gobuster</code>.
 Then we can login and get the flag.</p>
 <p><strong>Flag:</strong> <code>castorCTF{daT4B_3n4m_1s_fuN_N_p0w3rfu7}</code></p>
-
       </div></div>
 
   
@@ -198,16 +193,16 @@ Then we can login and get the flag.</p>
     <div class="pagination__buttons">
         
         <span class="button previous">
-            <a href="/writups/castorsctf20/base_runner/">
+            <a href="/writups/castorsctf20/babybof2/">
                 <span class="button__icon">←</span>
-                <span class="button__text">Base Number</span>
+                <span class="button__text">castorsCTF20 - babybof2</span>
             </a>
         </span>
         
         
         <span class="button next">
             <a href="/writups/castorsctf20/father_taurus_kernel_import/">
-                <span class="button__text">Father Taurus Kernel Import!</span>
+                <span class="button__text">castorsCTF20 - Father Taurus Kernel Import!</span>
                 <span class="button__icon">→</span>
             </a>
         </span>

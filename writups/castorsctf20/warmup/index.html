@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>castorsCTF20 - Warmup :: Blog — Where&#39;s the truth in the written word if no one reads it?</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="" />
+<meta name="keywords" content="blog" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/writups/castorsctf20/warmup/" />
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/blue.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/img/favicon/blue.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  <meta name="twitter:site" content="" />
+
+<meta name="twitter:creator" content="tozkoparan (Ahmed Selim Üzüm)" />
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="castorsCTF20 - Warmup :: Blog">
+<meta property="og:description" content="" />
+<meta property="og:url" content="/writups/castorsctf20/warmup/" />
+<meta property="og:site_name" content="castorsCTF20 - Warmup" />
+
+  
+    <meta property="og:image" content="/img/favicon/blue.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Tozkoparan (Ahmed Selim Üzüm)
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="https://github.com/ahmedselim2017">Github</a></li>
+        
+      
+        
+          <li><a href="/writups">CTF Writups</a></li>
+        
+      
+      
+    
+
+    
+    <div class="spacer"></div>
+    <ul class="language-selector">
+      <ul class="language-selector-current">
+          <li>English ▾</li>
+      </ul>
+      <ul class="language-selector__more hidden">
+        
+        <li><a href="/">English</a></li>
+        
+        <li><a href="/tr/">Türkçe</a></li>
+        
+      </ul>
+    </ul>
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="https://github.com/ahmedselim2017">Github</a></li>
+      
+    
+      
+        <li><a href="/writups">CTF Writups</a></li>
+      
+    
+    
+    <hr />
+        
+          <li>
+            <a href="/">English</a>
+          </li>
+        
+          <li>
+            <a href="/tr/">Türkçe</a>
+          </li>
+        
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/writups/castorsctf20/warmup/">castorsCTF20 - Warmup</a></h1>
+  <div class="post-meta">
+    
+    
+    <span class="post-author">::
+      tozkoparan (Ahmed Selim Üzüm)
+    </span>
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/writeup/">writeup</a>&nbsp;
+    
+    #<a href="/tags/crypto/">crypto</a>&nbsp;
+    
+    #<a href="/tags/castorsctf20/">castorsCTF20</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <p>With some calculations we can get <code>p</code> and <code>q</code></p>
+<p>a<sup>2</sup>
+ + b<sup>2</sup>
+ = c<sup>2</sup>
+</p>
+<p>(p &#43; q)<sup>2</sup>
+ + (p - q)<sup>2</sup>
+ = c<sup>2</sup>
+</p>
+<p>2p<sup>2</sup>
+ + 2q<sup>2</sup>
+ = c<sup>2</sup>
+</p>
+<hr>
+<p>ab = 2A</p>
+<p>(p + q) (p - q) = 2A</p>
+<p>p<sup>2</sup>
+ - q<sup>2</sup>
+ = 2A</p>
+<hr>
+<p>2p<sup>2</sup>
+ - 2q<sup>2</sup>
+ = 4A</p>
+<p>2p<sup>2</sup>
+ + 2q<sup>2</sup>
+ = c<sup>2</sup>
+</p>
+<p>4p<sup>2</sup>
+ = 4A + c<sup>2</sup>
+</p>
+<p>And we got the <code>p</code>! Now we can get <code>q</code> easily with plugging <code>p</code> into one of the
+equation. So let&rsquo;s compute them!</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> gmpy2
+c_square <span style="color:#f92672">=</span> <span style="color:#ae81ff">41027546415588921135190519817388916847442693284567375482282571314638757544938653824671437300971782426302443281077457253827782026089649732942648771306702020</span>
+A<span style="color:#f92672">=</span><span style="color:#ae81ff">1780602199528179468577178612383888301611753776788787799581979768613992169436352468580888042155360498830144442282937213247708372597613226926855391934953064</span>
+
+p <span style="color:#f92672">=</span> int(gmpy2<span style="color:#f92672">.</span>isqrt(c_square <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">*</span> A) <span style="color:#f92672">//</span> <span style="color:#ae81ff">2</span>)
+q <span style="color:#f92672">=</span> int(gmpy2<span style="color:#f92672">.</span>isqrt(p<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> A))
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;p: {}&#34;</span><span style="color:#f92672">.</span>format(p))
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;q: {}&#34;</span><span style="color:#f92672">.</span>format(q))
+</code></pre></div><p>Now let&rsquo;s decrypt the message!</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> Crypto.Util.number <span style="color:#f92672">import</span> inverse
+
+n <span style="color:#f92672">=</span> p <span style="color:#f92672">*</span> q
+e<span style="color:#f92672">=</span><span style="color:#ae81ff">0x10001</span>
+enc<span style="color:#f92672">=</span><span style="color:#ae81ff">825531027337680366509171870396193970230179478931882005355846498785843598000659828635030935743236266080589740863128695174980645084614454653557872620514117</span>
+
+phi <span style="color:#f92672">=</span> (p <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">*</span> (q <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)
+d <span style="color:#f92672">=</span> inverse(e, phi)
+
+m <span style="color:#f92672">=</span> pow(enc, d, n)
+<span style="color:#66d9ef">print</span>((hex(m))[<span style="color:#ae81ff">2</span>:<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]<span style="color:#f92672">.</span>decode(<span style="color:#e6db74">&#39;hex&#39;</span>))
+</code></pre></div><p><strong>Flag:</strong> <code>castorsCTF{n0th1ng_l1k3_pr1m3_numb3r5_t0_w4rm_up_7h3_3ng1n3s}</code></p>
+      </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="/writups/castorsctf20/vault0/">
+                <span class="button__icon">←</span>
+                <span class="button__text">castorsCTF20 - Vault 0</span>
+            </a>
+        </span>
+        
+        
+    </div>
+</div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Ahmed Selim Üzüm</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

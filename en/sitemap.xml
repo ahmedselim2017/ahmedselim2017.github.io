@@ -3,11 +3,66 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="/tr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/"
+                />
+  </url>
+  
+  <url>
     <loc>/writups/castorsctf20/</loc>
   </url>
   
   <url>
+    <loc>/writups/castorsctf20/bane_art/</loc>
+  </url>
+  
+  <url>
+    <loc>/writups/castorsctf20/base_runner/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/castorsctf20/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="/tr/tags/castorsctf20/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/castorsctf20/"
+                />
+  </url>
+  
+  <url>
+    <loc>/writups/castors/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="/tr/writups/castors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/writups/castors/"
+                />
+  </url>
+  
+  <url>
     <loc>/writups/castorsctf20/abcbof/</loc>
+  </url>
+  
+  <url>
+    <loc>/writups/castorsctf20/amazon/</loc>
   </url>
   
   <url>
@@ -23,37 +78,91 @@
   </url>
   
   <url>
-    <loc>/writups/castorsctf20/bane_art/</loc>
-  </url>
-  
-  <url>
-    <loc>/writups/castorsctf20/base_runner/</loc>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="tr"
-                href="/tr/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/"
-                />
-  </url>
-  
-  <url>
     <loc>/writups/castorsctf20/car_lottery/</loc>
   </url>
   
   <url>
-    <loc>/tags/castorsctf20/</loc>
+    <loc>/writups/castorsctf20/father_taurus_kernel_import/</loc>
   </url>
   
   <url>
-    <loc>/writups/castors/</loc>
+    <loc>/writups/castorsctf20/gif/</loc>
+  </url>
+  
+  <url>
+    <loc>/writups/castorsctf20/glitchity_glitch/</loc>
+  </url>
+  
+  <url>
+    <loc>/writups/castorsctf20/0x101_dalmatians/</loc>
+  </url>
+  
+  <url>
+    <loc>/writups/castorsctf20/goose_chase/</loc>
+  </url>
+  
+  <url>
+    <loc>/writups/castorsctf20/jigglypuffs_song/</loc>
+  </url>
+  
+  <url>
+    <loc>/writups/castorsctf20/leftovers/</loc>
+  </url>
+  
+  <url>
+    <loc>/writups/castorsctf20/magic_school_bus/</loc>
+  </url>
+  
+  <url>
+    <loc>/writups/castorsctf20/manipulation/</loc>
+  </url>
+  
+  <url>
+    <loc>/writups/castorsctf20/octopus/</loc>
+  </url>
+  
+  <url>
+    <loc>/writups/castorsctf20/one_trick_pony/</loc>
+  </url>
+  
+  <url>
+    <loc>/writups/castorsctf20/password_crack_1/</loc>
+  </url>
+  
+  <url>
+    <loc>/writups/castorsctf20/password_crack_2/</loc>
+  </url>
+  
+  <url>
+    <loc>/writups/castorsctf20/password_crack_3/</loc>
+  </url>
+  
+  <url>
+    <loc>/writups/castorsctf20/quiz/</loc>
+  </url>
+  
+  <url>
+    <loc>/writups/castorsctf20/reverse-me/</loc>
+  </url>
+  
+  <url>
+    <loc>/writups/castorsctf20/shortcuts/</loc>
+  </url>
+  
+  <url>
+    <loc>/writups/castorsctf20/stack/</loc>
+  </url>
+  
+  <url>
+    <loc>/writups/castorsctf20/two_paths/</loc>
+  </url>
+  
+  <url>
+    <loc>/writups/castorsctf20/vault0/</loc>
+  </url>
+  
+  <url>
+    <loc>/writups/castorsctf20/warmup/</loc>
   </url>
   
   <url>
@@ -75,7 +184,17 @@
   </url>
   
   <url>
-    <loc>/writups/castorsctf20/father_taurus_kernel_import/</loc>
+    <loc>/tags/crypto/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="/tr/tags/crypto/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/crypto/"
+                />
   </url>
   
   <url>
@@ -83,39 +202,7 @@
   </url>
   
   <url>
-    <loc>/writups/castorsctf20/gif/</loc>
-  </url>
-  
-  <url>
-    <loc>/writups/castorsctf20/glitchity_glitch/</loc>
-  </url>
-  
-  <url>
-    <loc>/writups/castorsctf20/leftovers/</loc>
-  </url>
-  
-  <url>
-    <loc>/writups/castorsctf20/manipulation/</loc>
-  </url>
-  
-  <url>
     <loc>/tags/misc/</loc>
-  </url>
-  
-  <url>
-    <loc>/writups/castorsctf20/octopus/</loc>
-  </url>
-  
-  <url>
-    <loc>/writups/castorsctf20/password_crack_1/</loc>
-  </url>
-  
-  <url>
-    <loc>/writups/castorsctf20/password_crack_2/</loc>
-  </url>
-  
-  <url>
-    <loc>/writups/castorsctf20/password_crack_3/</loc>
   </url>
   
   <url>
@@ -123,23 +210,7 @@
   </url>
   
   <url>
-    <loc>/writups/castorsctf20/quiz/</loc>
-  </url>
-  
-  <url>
-    <loc>/writups/castorsctf20/reverse-me/</loc>
-  </url>
-  
-  <url>
     <loc>/tags/reversing/</loc>
-  </url>
-  
-  <url>
-    <loc>/writups/castorsctf20/shortcuts/</loc>
-  </url>
-  
-  <url>
-    <loc>/writups/castorsctf20/stack/</loc>
   </url>
   
   <url>
@@ -157,19 +228,35 @@
   </url>
   
   <url>
-    <loc>/writups/castorsctf20/vault0/</loc>
-  </url>
-  
-  <url>
     <loc>/tags/web/</loc>
   </url>
   
   <url>
     <loc>/tags/writeup/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="/tr/tags/writeup/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/writeup/"
+                />
   </url>
   
   <url>
     <loc>/writups/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="/tr/writups/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/writups/"
+                />
   </url>
   
 </urlset>

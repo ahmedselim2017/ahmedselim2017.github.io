@@ -10,5 +10,32 @@
 	<atom:link href="/tr/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>castorsCTF20</title>
+      <link>/tr/tags/castorsctf20/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tr/tags/castorsctf20/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>crypto</title>
+      <link>/tr/tags/crypto/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tr/tags/crypto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>writeup</title>
+      <link>/tr/tags/writeup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tr/tags/writeup/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

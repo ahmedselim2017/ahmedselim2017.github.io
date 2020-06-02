@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   
-    <title>web :: Blog</title>
+    <title>web :: Blog — Where&#39;s the truth in the written word if no one reads it?</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -16,7 +16,7 @@
 
 <link rel="stylesheet" href="/assets/style.css">
 
-  <link rel="stylesheet" href="/assets/green.css">
+  <link rel="stylesheet" href="/assets/blue.css">
 
 
 
@@ -25,7 +25,7 @@
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
 
-  <link rel="shortcut icon" href="/img/favicon/green.png">
+  <link rel="shortcut icon" href="/img/favicon/blue.png">
 
 
 
@@ -44,7 +44,7 @@
 <meta property="og:site_name" content="web" />
 
   
-    <meta property="og:image" content="/img/favicon/green.png">
+    <meta property="og:image" content="/img/favicon/blue.png">
   
 
 <meta property="og:image:width" content="2048">
@@ -75,7 +75,7 @@
     <div class="header__logo">
       <a href="/">
   <div class="logo">
-    Ahmed Selim Üzüm
+    Tozkoparan (Ahmed Selim Üzüm)
   </div>
 </a>
 
@@ -158,7 +158,7 @@
   
   <div class="post on-list">
     <h1 class="post-title">
-      <a href="/writups/castorsctf20/bane_art/">Bane Art</a></h1>
+      <a href="/writups/castorsctf20/bane_art/">Bane castorsCTF20 - Art</a></h1>
     <div class="post-meta">
       <span class="post-date">
         0001-01-01
@@ -184,8 +184,7 @@
     <div class="post-content">
       
       
-      When we inspect the site we can see it uses topic param for getting the topig. And it looks like it includes the topic file. But can we use it for LFI? YES! We can test it with setting topic to /etc/passwd.
-With changing our user agent to &lt;?php system($_GET[&lsquo;cmd&rsquo;]);?&gt; and reading /var/log/apache2/access.log file we can execute any command we want using CMD param. Then with setting CMD to ls -Rla we can see flag is inside /home/falg/flag/test/why/the/hassle/right/flag.
+      
       
       
     </div>
@@ -200,7 +199,7 @@ With changing our user agent to &lt;?php system($_GET[&lsquo;cmd&rsquo;]);?&gt; 
   
   <div class="post on-list">
     <h1 class="post-title">
-      <a href="/writups/castorsctf20/quiz/">Quiz</a></h1>
+      <a href="/writups/castorsctf20/quiz/">castorsCTF20 - Quiz</a></h1>
     <div class="post-meta">
       <span class="post-date">
         0001-01-01
@@ -226,7 +225,7 @@ With changing our user agent to &lt;?php system($_GET[&lsquo;cmd&rsquo;]);?&gt; 
     <div class="post-content">
       
       
-      It looks like there is some math problems in here. Let’s use gobuster for finding is there anything else. We found backup! And ther is an interesting function called super which prints a file. So let’s print the flag. But where could it be? maybe inside /home/$USER/flag.txt? Let’s try it. We know the user is jeff from challenge description. Let’s send a request to <a href="http://web1.cybercastors.com">http://web1.cybercastors.com</a>:14436/test/home/jeff/flag.txt And we got the flag!
+      
       
       
     </div>
@@ -241,7 +240,7 @@ With changing our user agent to &lt;?php system($_GET[&lsquo;cmd&rsquo;]);?&gt; 
   
   <div class="post on-list">
     <h1 class="post-title">
-      <a href="/writups/castorsctf20/shortcuts/">Shortcuts</a></h1>
+      <a href="/writups/castorsctf20/shortcuts/">castorsCTF20 - Shortcuts</a></h1>
     <div class="post-meta">
       <span class="post-date">
         0001-01-01
@@ -267,10 +266,7 @@ With changing our user agent to &lt;?php system($_GET[&lsquo;cmd&rsquo;]);?&gt; 
     <div class="post-content">
       
       
-      First, let’s try to upload a go file.
-exit status 1Sorry there doesn&rsquo;t seem to be a cat.go.go file So it means we need to remove .go extension? Let’s upload another one without extension. Yep! It worked. But for that there needs to be one with extension and one without.
-So if we can execute go file let’s execute ls -Rla with go and find the interesting files.
-package main import ( &quot;fmt&quot; &quot;os/exec&quot; ) func main() { cmd := exec.
+      
       
       
     </div>

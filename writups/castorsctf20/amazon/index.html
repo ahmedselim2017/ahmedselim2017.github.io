@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>castorsCTF20 - Amazon :: Blog — Where&#39;s the truth in the written word if no one reads it?</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="" />
+<meta name="keywords" content="blog" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/writups/castorsctf20/amazon/" />
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/blue.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/img/favicon/blue.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  <meta name="twitter:site" content="" />
+
+<meta name="twitter:creator" content="tozkoparan (Ahmed Selim Üzüm) &amp; Zeyd" />
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="castorsCTF20 - Amazon :: Blog">
+<meta property="og:description" content="" />
+<meta property="og:url" content="/writups/castorsctf20/amazon/" />
+<meta property="og:site_name" content="castorsCTF20 - Amazon" />
+
+  
+    <meta property="og:image" content="/img/favicon/blue.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Tozkoparan (Ahmed Selim Üzüm)
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="https://github.com/ahmedselim2017">Github</a></li>
+        
+      
+        
+          <li><a href="/writups">CTF Writups</a></li>
+        
+      
+      
+    
+
+    
+    <div class="spacer"></div>
+    <ul class="language-selector">
+      <ul class="language-selector-current">
+          <li>English ▾</li>
+      </ul>
+      <ul class="language-selector__more hidden">
+        
+        <li><a href="/">English</a></li>
+        
+        <li><a href="/tr/">Türkçe</a></li>
+        
+      </ul>
+    </ul>
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="https://github.com/ahmedselim2017">Github</a></li>
+      
+    
+      
+        <li><a href="/writups">CTF Writups</a></li>
+      
+    
+    
+    <hr />
+        
+          <li>
+            <a href="/">English</a>
+          </li>
+        
+          <li>
+            <a href="/tr/">Türkçe</a>
+          </li>
+        
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/writups/castorsctf20/amazon/">castorsCTF20 - Amazon</a></h1>
+  <div class="post-meta">
+    
+    
+    <span class="post-author">::
+      tozkoparan (Ahmed Selim Üzüm) &amp; Zeyd
+    </span>
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/writeup/">writeup</a>&nbsp;
+    
+    #<a href="/tags/crypto/">crypto</a>&nbsp;
+    
+    #<a href="/tags/castorsctf20/">castorsCTF20</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <h2 id="amazon">Amazon<a href="#amazon" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Description gaves two hints. One is <code>prime</code> other is <code>series</code>. Write a script to divide every number to the prime number which has the same index.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> string
+
+numbers <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;198&#39;</span>, <span style="color:#e6db74">&#39;291&#39;</span>, <span style="color:#e6db74">&#39;575&#39;</span>, <span style="color:#e6db74">&#39;812&#39;</span>,
+           <span style="color:#e6db74">&#39;1221&#39;</span>, <span style="color:#e6db74">&#39;1482&#39;</span>, <span style="color:#e6db74">&#39;1955&#39;</span>, <span style="color:#e6db74">&#39;1273&#39;</span>,
+           <span style="color:#e6db74">&#39;1932&#39;</span>, <span style="color:#e6db74">&#39;2030&#39;</span>, <span style="color:#e6db74">&#39;3813&#39;</span>, <span style="color:#e6db74">&#39;2886&#39;</span>,
+           <span style="color:#e6db74">&#39;1968&#39;</span>, <span style="color:#e6db74">&#39;4085&#39;</span>, <span style="color:#e6db74">&#39;3243&#39;</span>, <span style="color:#e6db74">&#39;5830&#39;</span>,
+           <span style="color:#e6db74">&#39;5900&#39;</span>, <span style="color:#e6db74">&#39;5795&#39;</span>, <span style="color:#e6db74">&#39;5628&#39;</span>, <span style="color:#e6db74">&#39;3408&#39;</span>,
+           <span style="color:#e6db74">&#39;7300&#39;</span>, <span style="color:#e6db74">&#39;4108&#39;</span>, <span style="color:#e6db74">&#39;10043&#39;</span>, <span style="color:#e6db74">&#39;8455&#39;</span>,
+           <span style="color:#e6db74">&#39;6790&#39;</span>, <span style="color:#e6db74">&#39;4848&#39;</span>, <span style="color:#e6db74">&#39;11742&#39;</span>, <span style="color:#e6db74">&#39;10165&#39;</span>,
+           <span style="color:#e6db74">&#39;8284&#39;</span>, <span style="color:#e6db74">&#39;5424&#39;</span>, <span style="color:#e6db74">&#39;14986&#39;</span>, <span style="color:#e6db74">&#39;6681&#39;</span>,
+           <span style="color:#e6db74">&#39;13015&#39;</span>, <span style="color:#e6db74">&#39;10147&#39;</span>, <span style="color:#e6db74">&#39;7897&#39;</span>, <span style="color:#e6db74">&#39;14345&#39;</span>,
+           <span style="color:#e6db74">&#39;13816&#39;</span>, <span style="color:#e6db74">&#39;8313&#39;</span>, <span style="color:#e6db74">&#39;18370&#39;</span>, <span style="color:#e6db74">&#39;8304&#39;</span>,
+           <span style="color:#e6db74">&#39;19690&#39;</span>, <span style="color:#e6db74">&#39;22625&#39;</span>]
+
+primes <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;2&#34;</span>,<span style="color:#e6db74">&#34;3&#34;</span>,<span style="color:#e6db74">&#34;5&#34;</span>,<span style="color:#e6db74">&#34;7&#34;</span>,
+           <span style="color:#e6db74">&#34;11&#34;</span>,<span style="color:#e6db74">&#34;13&#34;</span>,<span style="color:#e6db74">&#34;17&#34;</span>,<span style="color:#e6db74">&#34;19&#34;</span>,
+           <span style="color:#e6db74">&#34;23&#34;</span>,<span style="color:#e6db74">&#34;29&#34;</span>,<span style="color:#e6db74">&#34;31&#34;</span>,<span style="color:#e6db74">&#34;37&#34;</span>,
+           <span style="color:#e6db74">&#34;41&#34;</span>,<span style="color:#e6db74">&#34;43&#34;</span>,<span style="color:#e6db74">&#34;47&#34;</span>,<span style="color:#e6db74">&#34;53&#34;</span>,
+           <span style="color:#e6db74">&#34;59&#34;</span>,<span style="color:#e6db74">&#34;61&#34;</span>,<span style="color:#e6db74">&#34;67&#34;</span>,<span style="color:#e6db74">&#34;71&#34;</span>,
+           <span style="color:#e6db74">&#34;73&#34;</span>,<span style="color:#e6db74">&#34;79&#34;</span>,<span style="color:#e6db74">&#34;83&#34;</span>,<span style="color:#e6db74">&#34;89&#34;</span>,
+           <span style="color:#e6db74">&#34;97&#34;</span>,<span style="color:#e6db74">&#34;101&#34;</span>,<span style="color:#e6db74">&#34;103&#34;</span>,<span style="color:#e6db74">&#34;107&#34;</span>,
+           <span style="color:#e6db74">&#34;109&#34;</span>,<span style="color:#e6db74">&#34;113&#34;</span>,<span style="color:#e6db74">&#34;127&#34;</span>,<span style="color:#e6db74">&#34;131&#34;</span>,
+           <span style="color:#e6db74">&#34;137&#34;</span>,<span style="color:#e6db74">&#34;139&#34;</span>,<span style="color:#e6db74">&#34;149&#34;</span>,<span style="color:#e6db74">&#34;151&#34;</span>,
+           <span style="color:#e6db74">&#34;157&#34;</span>,<span style="color:#e6db74">&#34;163&#34;</span>,<span style="color:#e6db74">&#34;167&#34;</span>,<span style="color:#e6db74">&#34;173&#34;</span>,
+           <span style="color:#e6db74">&#34;179&#34;</span>,<span style="color:#e6db74">&#34;181&#34;</span>]
+
+parts <span style="color:#f92672">=</span> []
+
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(numbers)):
+    parts<span style="color:#f92672">.</span>append(int(numbers[i]) <span style="color:#f92672">//</span> int(primes[i]))
+
+flag <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+<span style="color:#66d9ef">for</span> part <span style="color:#f92672">in</span> parts:
+    <span style="color:#66d9ef">print</span>(chr(part), end<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>)
+</code></pre></div><p><strong>Flag:</strong> castorsCTF{N0_End_T0d4y_F0r_L0v3_I5_X3n0n}</p>
+      </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="/writups/castorsctf20/abcbof/">
+                <span class="button__icon">←</span>
+                <span class="button__text">castorsCTF20 - abcbof</span>
+            </a>
+        </span>
+        
+        
+        <span class="button next">
+            <a href="/writups/castorsctf20/arithmetics/">
+                <span class="button__text">castorsCTF20 - Arithmetics</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>Ahmed Selim Üzüm</span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
