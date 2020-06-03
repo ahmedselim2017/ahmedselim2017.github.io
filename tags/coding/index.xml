@@ -7,6 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Ahmed Selim Üzüm</copyright>
+    <lastBuildDate>Wed, 03 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/coding/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +15,7 @@
     <item>
       <title>Base castorsCTF20 - Number</title>
       <link>/writups/castorsctf20/base_runner/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/writups/castorsctf20/base_runner/</guid>
       <description></description>
@@ -23,7 +24,7 @@
     <item>
       <title>castorsCTF20 - Arithmetics</title>
       <link>/writups/castorsctf20/arithmetics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/writups/castorsctf20/arithmetics/</guid>
       <description></description>
@@ -32,7 +33,7 @@
     <item>
       <title>castorsCTF20 - Car Lottery</title>
       <link>/writups/castorsctf20/car_lottery/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/writups/castorsctf20/car_lottery/</guid>
       <description></description>
@@ -41,7 +42,7 @@
     <item>
       <title>castorsCTF20 - Glitchity Glitch</title>
       <link>/writups/castorsctf20/glitchity_glitch/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/writups/castorsctf20/glitchity_glitch/</guid>
       <description></description>

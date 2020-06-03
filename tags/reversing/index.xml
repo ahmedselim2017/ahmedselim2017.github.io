@@ -7,6 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Ahmed Selim Üzüm</copyright>
+    <lastBuildDate>Wed, 03 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/reversing/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +15,7 @@
     <item>
       <title>castorsCTF20 - Octopus</title>
       <link>/writups/castorsctf20/octopus/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/writups/castorsctf20/octopus/</guid>
       <description></description>
@@ -23,7 +24,7 @@
     <item>
       <title>castorsCTF20 - Reverse-me</title>
       <link>/writups/castorsctf20/reverse-me/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/writups/castorsctf20/reverse-me/</guid>
       <description></description>
@@ -32,7 +33,7 @@
     <item>
       <title>castorsCTF20 - Stack</title>
       <link>/writups/castorsctf20/stack/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/writups/castorsctf20/stack/</guid>
       <description></description>
@@ -41,7 +42,7 @@
     <item>
       <title>castorsCTF20 - Vault 0</title>
       <link>/writups/castorsctf20/vault0/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/writups/castorsctf20/vault0/</guid>
       <description></description>

@@ -7,6 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Ahmed Selim Üzüm</copyright>
+    <lastBuildDate>Wed, 03 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/pwn/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +15,7 @@
     <item>
       <title>castorsCTF20 - abcbof</title>
       <link>/writups/castorsctf20/abcbof/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/writups/castorsctf20/abcbof/</guid>
       <description></description>
@@ -23,7 +24,7 @@
     <item>
       <title>castorsCTF20 - babybof1</title>
       <link>/writups/castorsctf20/babybof1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/writups/castorsctf20/babybof1/</guid>
       <description></description>
@@ -32,7 +33,7 @@
     <item>
       <title>castorsCTF20 - babybof2</title>
       <link>/writups/castorsctf20/babybof2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/writups/castorsctf20/babybof2/</guid>
       <description></description>

@@ -7,6 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Ahmed Selim Üzüm</copyright>
+    <lastBuildDate>Wed, 03 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/crypto/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +15,7 @@
     <item>
       <title>castorsCTF20 - Amazon</title>
       <link>/writups/castorsctf20/amazon/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/writups/castorsctf20/amazon/</guid>
       <description></description>
@@ -23,7 +24,7 @@
     <item>
       <title>castorsCTF20 - Goose Chase</title>
       <link>/writups/castorsctf20/0x101_dalmatians/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/writups/castorsctf20/0x101_dalmatians/</guid>
       <description></description>
@@ -32,7 +33,7 @@
     <item>
       <title>castorsCTF20 - Goose Chase</title>
       <link>/writups/castorsctf20/goose_chase/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/writups/castorsctf20/goose_chase/</guid>
       <description></description>
@@ -41,7 +42,7 @@
     <item>
       <title>castorsCTF20 - Jigglypuff&#39;s Song</title>
       <link>/writups/castorsctf20/jigglypuffs_song/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/writups/castorsctf20/jigglypuffs_song/</guid>
       <description></description>
@@ -50,7 +51,7 @@
     <item>
       <title>castorsCTF20 - Magic School Bus</title>
       <link>/writups/castorsctf20/magic_school_bus/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/writups/castorsctf20/magic_school_bus/</guid>
       <description></description>
@@ -59,7 +60,7 @@
     <item>
       <title>castorsCTF20 - One Tricky Pony</title>
       <link>/writups/castorsctf20/one_trick_pony/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/writups/castorsctf20/one_trick_pony/</guid>
       <description></description>
@@ -68,7 +69,7 @@
     <item>
       <title>castorsCTF20 - Two Paths</title>
       <link>/writups/castorsctf20/two_paths/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/writups/castorsctf20/two_paths/</guid>
       <description></description>
@@ -77,7 +78,7 @@
     <item>
       <title>castorsCTF20 - Warmup</title>
       <link>/writups/castorsctf20/warmup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/writups/castorsctf20/warmup/</guid>
       <description></description>
